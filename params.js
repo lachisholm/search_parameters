@@ -3,9 +3,9 @@
 //-----------------------------
 
 const products = [
-    { id: 1, name: "Product 1", price: 3, image: "https://placehold.cs/300" },
-    { id: 2, name: "Product 2", price: 5, image: "https://placehold.cs/300" },
-    { id: 3, name: "Product 3", price: 7, image: "https://placehold.cs/300" },
+    { id: 1, name: "Product 1", price: 3, image: "https://placehold.co/300" },
+    { id: 2, name: "Product 2", price: 5, image: "https://placehold.co/300" },
+    { id: 3, name: "Product 3", price: 7, image: "https://placehold.co/300" },
 ];
 
 // --------------------------------
@@ -25,7 +25,8 @@ function getParamValue(key) {
 function createProductMarkup(item) {
     return `
     <section class="product">
-        <img src="${item.image}" alt="{item.name}">
+        <img src="${item.image}" alt="${item.name}">
+        <div class="product_details">
             <h2>{item.name}</h2>
             <p>Price: $${item.price}</p>
         </div>
