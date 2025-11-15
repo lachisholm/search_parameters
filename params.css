@@ -1,0 +1,103 @@
+/* -----------------------------------------
+/*   Global Styles
+/* -----------------------------------------*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* ----------------------------------------
+/* Header
+/* ----------------------------------------*/
+header {
+    border-bottom: 1px solid coral;
+    padding: 0.75rem 1rem;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.logoImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 25%;
+    background-color: coral;
+    margin-right: 0.75rem;
+}
+
+/* ------------------------------------
+/*  Featured Products (index.html)
+/* ------------------------------------*/
+main section ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 0.75rem;
+}
+
+
+main section ul li {
+    margin-bottom: 0.6rem;
+}
+
+main section ul li a {
+    color: #333;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/* -----------------------------------
+/* Product Display
+/* -----------------------------------*/
+
+.product {
+    border: 1px solid #444;
+    padding: 1rem;
+    margin: 1.5rem auto;
+    max-width: 350px;
+    border-radius: 6px;
+}
+
+.product_details {
+    margin-top: 0.75rem;
+}
+
+.product_details h2 {
+    margin: 0 0 0.5rem 0;
+}
+
+/* ----------------------------------
+/*   Wide Screens
+/* ----------------------------------*/
+
+
+@media (min-width: 600px) {
+    .product {
+        display: flex;
+        align-items: flex-start;
+        max-width: 650px;
+        gap: 1rem;
+    }
+
+    .product_details {
+        margin-top: 0;
+    }
+}
+
+
+
